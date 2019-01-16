@@ -16,8 +16,8 @@ pipeline {
         echo "APP_NAME    = ${env.APP_NAME}"
         echo "TAG_STAGING = ${env.TAG_STAGING}"
         echo "VERSION     = ${env.VERSION}"
-      {
-    {
+      }
+    }
     stage('Node build') {
       steps {
         checkout scm
