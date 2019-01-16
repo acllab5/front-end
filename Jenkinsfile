@@ -14,9 +14,11 @@ pipeline {
     stage('Info') {
       steps {
         script {
-          echo "${env.APP_NAME}"
-          echo "${env.TAG_STAGING}"
-          echo "${env.VERSION}"
+          echo """
+APP_NAME    = ${env.APP_NAME}
+TAG_STAGING = ${env.TAG_STAGING}
+VERSION     = ${env.VERSION}
+          """
         {
       {
     {
@@ -106,6 +108,6 @@ pipeline {
             string(name: 'VERSION', value: "${env.VERSION}")
           ]
       }
-    }  
+    }
   }
 }
