@@ -11,6 +11,15 @@ pipeline {
     TAG_STAGING = "${env.TAG}-${env.VERSION}"
   }
   stages {
+    stage('Info') {
+      steps {
+        script {
+          echo "${env.APP_NAME}"
+          echo "${env.TAG_STAGING}"
+          echo "${env.VERSION}"
+        {
+      {
+    {
     stage('Node build') {
       steps {
         checkout scm
