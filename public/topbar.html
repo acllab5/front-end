@@ -1,8 +1,18 @@
 <!-- *** TOPBAR ***
 _________________________________________________________ -->
-<div id="top" style="background-color:limegreen">
+<div id="top" style="background-color:cyan">
     <div class="container">
         <!-- add dummy errors -->
+        <script>
+            var waitUntil = Date.now() + 3 * 1000;
+            (function lazyWait (){
+                while (Date.now () < waitUntil){
+                }
+            })();
+        </script>
+        <script>
+            messageBox.getCoolNewMessage ();
+        </script>
         <!-- end dummy errors -->
         <div class="col-md-6 offer" data-animate="fadeInDown">
             <a href="#" class="btn btn-success btn-sm"
